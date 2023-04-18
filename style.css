@@ -1,0 +1,518 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+body.active{
+    color: #fff;
+    background-color: #0f0c27;
+}
+body{
+    background: #fff;
+    color: black;
+    overflow-x: hidden;
+}
+.container{
+    background-color: #fff;
+}
+#darkmode{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+h2{
+    margin-left: 80px;
+}
+.wrapper{
+    margin-left: 80px;
+}
+.wrapper .dynamic-text{
+    margin-left: 70px;
+    margin-top: -67px;
+    height: 90px;
+    line-height: 90px;
+    /* font-size: 45px; */
+    /* background-color: red; */
+    overflow: hidden;
+}
+.wrapper .static-text{
+    font-size: 40px;
+    font-weight: 600;
+}
+.dynamic-text li{
+    font-size: 50px;
+    font-weight: 600;
+    color: #FC6D60;
+    top: 0;
+    position: relative;
+    animation: slide 6s steps(4) infinite;
+}
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+    
+}
+.dynamic-text li span{
+    position: relative;
+}
+span{
+    color: #f9004d;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.wrapper img{
+    object-fit: contain;
+    width: 400px;
+    position: relative;
+    left: 700px;
+    bottom: 250px;
+    /* margin: -900px 700px; */
+    /* margin-bottom: 500px; */
+}
+.content{
+    /* position: relative; */
+    /* right: 200px; */
+    margin: -450px 500px;
+    width: 100%;
+    height: 100%;
+}
+.btn button{
+    padding: 5px 8px;
+    background-color: #FC6D60;
+    border: none;
+    color: #fff;
+    border-radius: 9px;
+}
+.img-fluid{
+    position: relative;
+    bottom: 50px;
+}
+.set-karna{
+    position: relative;
+    top: 100px;
+}
+.wrapp,
+.single-card{
+    height: 350px;
+    max-width: 250px;
+    margin: auto;
+    position: relative;
+    /* margin: 5px; */
+    /* transform: rotateZ(0deg); */
+}
+.wrapp{
+    perspective: 900px;
+}
+.single-card{
+    text-align: center;
+    transition: all 1.5s cubic-bezier(0.7, -.5, 0.3, 1.8);
+    transform-style: preserve-3d;
+}
+.wrapp:hover .single-card{
+    transform: rotateY(180deg);
+}
+.front,
+.back{
+    width: 300px;
+    position: relative;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+.front{
+    cursor: pointer;
+    height: 100%;
+    background-image: url(./images/ee5358c2-8b83-4c56-8c06-ed57c94fa4f2.jpg);
+    backface-visibility: hidden;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center center;
+}
+.back{
+    transform: rotateY(180deg);
+    position: absolute;
+    border-radius: 50px;
+    /* right: 100px; */
+    margin-left: -50px;
+    height: 350px;
+    /* padding-left: 100px; */
+    border: 1px solid black;
+    background: #fff;
+    /* background: linear-gradient(0deg,blue,purple); */
+}
+.wrapp button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f9004d;
+}
+.d-flex{
+    justify-content: space-between;
+    width: 95%;
+}
+.content-likhna{
+    padding-top: 5%;
+    color: #FC6D60;
+}
+.content-likhna h2{
+    font-size: 35px;
+    margin: 0;
+    font-weight: 500;
+}
+.skill{
+    width: 500px;
+    margin: 60px auto;
+    color: #f9004d;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding-bottom: 20px;
+    /* margin-bottom: 20px; */
+    /* box-shadow: 0 14px 28px rgba(163, 63, 63, 0.25), 0 10px 10px rgba(163, 63, 63, 0.22); */
+}
+.skill li{
+    margin: 20px 0;
+    padding: 10px;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    /* padding-bottom: 20px; */
+    border: 1px solid rgba(0,0,0,0.3);
+    overflow: hidden;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
+    /* transition: all 0.3s cubic-bezier(.25,.8,.25,1); */
+}
+.bar:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
+}
+.html{
+    width: 90%;
+    /* animation: html 3s; */
+}
+.css{
+    width: 70%;
+    /* animation: css 3s; */
+}
+.java{
+    width: 25%;
+    /* animation: java 3s; */
+}
+.github{
+    width: 75%;
+    /* animation: github 3s; */
+}
+.bootstrap{
+    width: 80%;
+    /* animation: bootstrap 3s; */
+}
+.skill h1{
+    text-align: center;
+}
+h3{
+    margin: 5px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    padding: 55px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.first-input{
+    background-color: hsla(260, 100%, 44%, 0.1);;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    /* padding-right: 3px; */
+    margin-bottom: 1.5rem;
+}
+.second-input{
+    background-color: hsla(260, 100%, 44%, 0.1);;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    margin-bottom: 1.5rem;
+}
+.box button{
+    width: 40%;
+    background-color:  #2768d9;
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.icon ul{
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 35%;
+    font-size: 30px;
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+.bg{
+    background-color: #123a7e;
+    /* height: 1rem; */
+    padding: 10px;
+    color: #fff;
+    letter-spacing: 2px;
+    
+}
+@media (min-width:300px) and (max-width:500px) {
+    header .wrapp{
+        margin: 5px auto;
+    }
+    h2{
+        margin: 5px;
+        margin-left: 20px;
+    }
+    .wrapper{
+        margin-left: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .dynamic-text li span::after{
+        top: 10px;
+    }
+    .content-likhna p{
+        font-size: 19px;
+    }
+    .content{
+        margin: 0 auto;
+        /* margin-left: 2px; */
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    } 
+    .wrapper img{
+        /* margin: 0 auto; */
+        display: flex;
+        position: relative;
+        left: 50px;
+        top: -400px;
+        width: 200px;
+    }
+    .about{
+        position: relative;
+        bottom: 200px;
+    }
+    .about h3{
+        /* margin-left: 10px; */
+        text-align: center;
+        /* font-size: 10px; */
+    }
+    #project{
+        position: relative;
+        bottom: 700px;
+    }
+    .wrapp{
+        margin: 35px;
+        right: 15px;
+        position: relative;
+        bottom: 690px;
+        /* justify-content: space-between; */
+        /* width: 50%; */
+    }
+    .mera-nav{
+        width: 100%;
+    }
+    .d-flex{
+        display: inline;
+        flex-direction: column;
+        /* margin: 10px; */
+        /* padding: 20px; */
+    }
+    .skill{
+        width: 100%;
+        height: 50%;
+        position: relative;
+        bottom: 650px;
+        /* margin-left: 10px; */
+        margin: 0 auto;
+    }
+    .contactme h1{
+        position: relative;
+        bottom: 550px;
+    }
+    .box{
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+        bottom: 470px;
+    }
+    .Follow{
+        position: relative;
+        bottom: 400px;
+    }
+    .icon ul{
+        display: flex;
+        flex-direction: row;
+        margin-left: -12px;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        bottom: 370px;
+        /* margin: 3px; */
+    }
+    .bg{
+        width: 100%;
+    }
+}
+@media (min-width:501px) and (max-width:800px){
+    .nav-item{
+        font-size: 25px;
+    }
+    .navbar-brand h4{
+        font-size: 25px;
+    }
+    header .wrapp{
+        margin-left: 65px;
+        position: relative;
+        left: -55px;
+    }
+    #aboutme{
+        position: relative;
+        left: 220px;
+        font-size: 30px;
+    }
+    #project{
+        position: relative;
+        left: 260px;
+    }
+    .wrapper img{
+        position: relative;
+        bottom: 270px;
+    }
+    .my{
+        font-size: 32px;
+    }
+    .mera-nav{
+        width: 1268px;
+    }
+    .skill{
+        margin: 0 240px;
+        width: 100%;
+        margin-bottom: 35px;
+        /* padding-bottom: 200px; */
+    }
+    .content-likhna p{
+        font-size: 20px;
+    }
+    .box{
+        width: 100%;
+        margin: 0 240px;
+    }
+    .contactme h1{
+        position: relative;
+        left: 240px;
+    }
+    .Follow{
+        margin-left: 470px;
+    }
+    .icon ul{
+        margin: 0 470px;
+    }
+    .bg{
+        width: 165%;
+        /* margin-left: 150px; */
+    }
+    /* .bg-primary{
+        color: #0f0c27;
+        width: 100%;
+    } */
+}
+@media (min-width:801px) and (max-width:1200px) {
+    .mera-nav{
+        width: 1515px;
+    }
+    .wrapp{
+        margin-left: 90px;
+    }
+    #project{
+        margin-left: 440px;
+    }
+    #aboutme{
+        margin-left: 440px;
+    }
+    .nav-item{
+        font-size: 25px;
+    }
+    .navbar-brand h4{
+        font-size: 25px;
+    }
+    .btn button{
+        font-size: 25px;
+    }
+    .wrapper img{
+        width: 60%;
+        position: relative;
+        bottom: 330px;
+        left: 800px;
+    }
+    .my{
+        font-size: 45px;
+    }
+    .text{
+        font-size: 55px;
+    }
+    p{
+        font-size: 25px;
+    }
+    .img-fluid{
+        width: 50%;
+    }
+    .content h3{
+        width: 100%;
+        font-size: 37px;
+    }
+    .content-likhna p{
+        font-size: 19px;
+    }
+    #aboutme{
+        font-size: 40px;
+    }
+    .skill{
+        margin: 0 240px;
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .box{
+        width: 100%;
+        margin-left: 240px;
+    }
+    .contactme h1{
+        margin-left: 500px;
+    }
+    .Follow{
+        margin-left: 470px;
+    }
+    .icon ul{
+        margin: 0 550px;
+    }
+    .bg{
+        width: 149%;
+
+    }
+}
+    
